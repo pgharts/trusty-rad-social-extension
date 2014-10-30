@@ -1,5 +1,5 @@
 module Tags::WidgetTags
-  include Radiant::Taggable
+  include TrustyCms::Taggable
 
   desc "Widget of sharing icons"
   tag "rad_share_widget" do |tag|

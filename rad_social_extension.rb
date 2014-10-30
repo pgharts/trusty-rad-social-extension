@@ -2,10 +2,10 @@
 # require_dependency "application_controller"
 require "radiant-rad_social-extension"
 
-class RadSocialExtension < Radiant::Extension
-  version     RadiantRadSocialExtension::VERSION
-  description RadiantRadSocialExtension::DESCRIPTION
-  url         RadiantRadSocialExtension::URL
+class RadSocialExtension < TrustyCms::Extension
+  version     TrustyRadSocialExtension::VERSION
+  description TrustyRadSocialExtension::DESCRIPTION
+  url         TrustyRadSocialExtension::URL
 
   # See your config/routes.rb file in this extension to define custom routes
 

@@ -1,4 +1,4 @@
-namespace :radiant do
+namespace :trusty do
   namespace :extensions do
     namespace :rad_social do
       

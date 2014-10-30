@@ -1,8 +1,8 @@
 module RadiantRadSocialExtension
   VERSION     = "1.0.0"
-  SUMMARY     = "Rad Social for Radiant CMS"
+  SUMMARY     = "Rad Social for Trusty CMS"
   DESCRIPTION = "Makes Radiant better by adding rad_social!"
   URL         = "http://example.com/rad_social"
-  AUTHORS     = ["Your Name"]
-  EMAIL       = ["your email"]
+  AUTHORS     = ["Eric Sipple"]
+  EMAIL       = ["sipple@trustarts.org"]
 end

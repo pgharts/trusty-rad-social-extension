@@ -4,13 +4,13 @@ require "radiant-rad_social-extension"
 
 Gem::Specification.new do |s|
   s.name        = "radiant-rad_social-extension"
-  s.version     = RadiantRadSocialExtension::VERSION
+  s.version     = TrustyRadSocialExtension::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = RadiantRadSocialExtension::AUTHORS
-  s.email       = RadiantRadSocialExtension::EMAIL
-  s.homepage    = RadiantRadSocialExtension::URL
-  s.summary     = RadiantRadSocialExtension::SUMMARY
-  s.description = RadiantRadSocialExtension::DESCRIPTION
+  s.authors     = TrustyRadSocialExtension::AUTHORS
+  s.email       = TrustyRadSocialExtension::EMAIL
+  s.homepage    = TrustyRadSocialExtension::URL
+  s.summary     = TrustyRadSocialExtension::SUMMARY
+  s.description = TrustyRadSocialExtension::DESCRIPTION
 
   # Define gem dependencies here.
   # Don't include a dependency on radiant itself: it causes problems when radiant is in vendor/radiant.

@@ -1,4 +1,4 @@
-module RadiantRadSocialExtension
+module TrustyRadSocialExtension
   VERSION     = "1.0.0"
   SUMMARY     = "Rad Social for Trusty CMS"
   DESCRIPTION = "Makes Radiant better by adding rad_social!"

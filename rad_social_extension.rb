@@ -1,6 +1,6 @@
 # Uncomment this if you reference any of your controllers in activate
 # require_dependency "application_controller"
-require "radiant-rad_social-extension"
+require "trusty-rad-social-extension"
 
 class RadSocialExtension < TrustyCms::Extension
   version     TrustyRadSocialExtension::VERSION

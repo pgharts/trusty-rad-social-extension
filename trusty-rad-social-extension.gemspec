@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "radiant-rad_social-extension"
+require "trusty-rad-social-extension"
 
 Gem::Specification.new do |s|
-  s.name        = "radiant-rad_social-extension"
+  s.name        = "trusty-rad-social-extension"
   s.version     = TrustyRadSocialExtension::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = TrustyRadSocialExtension::AUTHORS

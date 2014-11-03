@@ -4,7 +4,7 @@ namespace :trusty do
       
       desc "Runs the migration of the Rad Social extension"
       task :migrate => :environment do
-        require 'radiant/extension_migrator'
+        require 'trusty_cms/extension_migrator'
         if ENV["VERSION"]
           RadSocialExtension.migrator.migrate(ENV["VERSION"].to_i)
           Rake::Task['db:schema:dump'].invoke

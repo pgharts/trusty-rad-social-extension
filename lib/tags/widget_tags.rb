@@ -9,8 +9,7 @@ module Tags::WidgetTags
     email_subject = attributes[:email_subject].nil? ? tag.locals.page.title : attributes[:email_subject]
     email_message = attributes[:email_message].nil? ? "I thought you might be interested in this: #{url}" : "#{attributes[:email_message]} #{url}"
     email_action_url = attributes[:email_action_url].nil? ? "/rad_social/mail" : attributes[:email_action_url]
-
-    response.template.render "widget/horizontal_widget",
+    request.env["action_controller.instance"].render_to_string :partial => "widget/horizontal_widget",
                              :locals => { :url => url,
                                           :message => message,
                                           :email_subject => email_subject,

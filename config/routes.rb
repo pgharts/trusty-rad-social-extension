@@ -1,5 +1,5 @@
 
 TrustyCms::Application.routes.draw do
-  get '/rad_social/mail', controller:'social_mailer', action: 'social_mail_form'
-  post '/rad_social/mail', controller:'social_mailer', action: 'create_social_mail'
+  get '/rad_social/mail' => 'social_mailer#social_mail_form', as: :rad_social_mail_form
+  post '/rad_social/mail' => 'social_mailer#social_mail_form#create_social_mail', as: :rad_create_social_mail
 end

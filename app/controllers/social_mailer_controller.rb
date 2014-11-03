@@ -1,5 +1,5 @@
 class SocialMailerController < ApplicationController
-  radiant_layout "default", {:only => :create_social_mail}
+  trusty_layout "default", {:only => :create_social_mail}
   before_filter Filters::RadCaptchaFilter, :only => :create_social_mail
   no_login_required
 
@@ -20,6 +20,7 @@ class SocialMailerController < ApplicationController
 
   def social_mail_form
     render :template => "rad_social_mailer/social_mail_form",
+           :layout => false,
            :locals => {
              :email_message => params[:email_message],
              :email_subject => params[:email_subject],

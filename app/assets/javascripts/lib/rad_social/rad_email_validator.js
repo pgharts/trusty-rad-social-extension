@@ -20,9 +20,6 @@ function RadEmailValidator(parentElement) {
                 required: "To email is required"
             }
         },
-        "recaptcha_response_field": {
-            captcha: true
-        },
         "rs-message": {
             required: true,
             messages: {
@@ -30,14 +27,6 @@ function RadEmailValidator(parentElement) {
             }
         }
     };
-
-  var captcha = new Captcha("#recaptcha-container");
-  jQuery.validator.addMethod('captcha',
-          function(value, element) {
-              return captcha.isValid();
-          },
-          "For security purposes, you must enter the characters in the box above."
-   );
 
     this.addRules = function() {
         for (var key in rules) {

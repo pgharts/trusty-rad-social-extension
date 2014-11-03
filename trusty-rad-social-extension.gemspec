@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   # Define gem dependencies here.
   # Don't include a dependency on radiant itself: it causes problems when radiant is in vendor/radiant.
   # s.add_dependency "something", "~> 1.0.0"
-  # s.add_dependency "radiant-some-extension", "~> 1.0.0"
+  s.add_dependency "recaptcha", "~> 0.3.6"
 
   ignores = if File.exist?('.gitignore')
     File.read('.gitignore').split("\n").inject([]) {|a,p| a + Dir[p] }

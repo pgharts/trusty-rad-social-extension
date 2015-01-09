@@ -1,15 +1,15 @@
+require 'mail'
 class RadSocialMailer < ActionMailer::Base
 
   def social_mail options
 
-    email_recipients = Rails.configuration.test_email_recipients ? Rails.configuration.test_email_recipients : options[:to]
+    #binding.pry
 
-    recipients email_recipients
-    from options[:from]
-    subject options[:subject]
-    sent_on Time.now
-    content_type "text/html"
-    body :from_name => options[:from_name], :from_email => options[:from], :message => options[:message]
+    from_address = Mail::Address.new options[:from] # ex: "john@example.com"
+    from_address.display_name = options[:from_name] # ex: "John Doe"
+    mail(:to => options[:to], :from => from_address.format, :subject => options[:subject]) do |format|
+      format.html {render :text => options[:message]}
+    end
 
   end
 

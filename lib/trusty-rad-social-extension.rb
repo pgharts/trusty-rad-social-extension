@@ -1,5 +1,5 @@
 module TrustyRadSocialExtension
-  VERSION     = "1.0.9"
+  VERSION     = "1.0.10"
   SUMMARY     = "Rad Social for Trusty CMS"
   DESCRIPTION = "Makes Trusty CMS better by adding rad_social!"
   URL         = "http://example.com/rad_social"

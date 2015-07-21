@@ -1,0 +1,2 @@
+gemspec: trusty-rad-social-extension.gemspec
+deploy_command: gem push

@@ -1,6 +1,6 @@
 require 'recaptcha'
 
-class Filters::RadCaptchaFilter
+class RadCaptchaFilter
 
   def initialize controller
     @controller = controller

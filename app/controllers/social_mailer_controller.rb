@@ -1,6 +1,6 @@
 class SocialMailerController < ApplicationController
   trusty_layout "default", {:only => :create_social_mail}
-  before_filter Filters::RadCaptchaFilter, :only => :create_social_mail
+  before_filter RadCaptchaFilter, :only => :create_social_mail
   no_login_required
 
   def create_social_mail

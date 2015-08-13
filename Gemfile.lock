@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    trusty-rad-social-extension (2.0.1)
+    trusty-rad-social-extension (2.0.2)
       recaptcha (~> 0.3.6)
-      trusty-cms (~> 2.0.0.pre.beta)
-      trusty-layouts-extension (~> 2.0.0.pre.beta)
+      trusty-cms (~> 2.0.0)
+      trusty-layouts-extension (~> 2.0.0)
 
 GEM
   remote: https://rubygems.org/

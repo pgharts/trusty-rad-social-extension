@@ -1,6 +1,18 @@
 .rad-icon {
     float: left;
     padding-right: 3px;
+  .rad-facebook {
+    background-image: url('rad_social/facebook.png');
+  }
+  .rad-twitter {
+    background-image: url('rad_social/twitter.png');
+  }
+  .rad-email {
+    background-image: url('rad_social/email.png');
+  }
+  .rad-gplus {
+    background-image: url('rad_social/gplus.png');
+  }
 }
 .rad-email-form {
     position: relative;

@@ -6,8 +6,8 @@ class RadCaptchaFilter
     @controller = controller
   end
 
-  def self.filter controller
-    Filters::RadCaptchaFilter.new(controller).verify
+  def self.before controller
+    RadCaptchaFilter.new(controller).verify
   end
 
   def verify
@@ -22,6 +22,5 @@ class RadCaptchaFilter
     @controller.extend Recaptcha::Verify
     @controller.verify_recaptcha(:private_key => Rails.configuration.captcha_private_key)
   end
-
 
 end

@@ -13,7 +13,7 @@ class SocialMailerController < ApplicationController
       :subject => params[:subject]
     }
 
-    RadSocialMailer.social_mail(mailer_options).deliver
+    RadSocialMailer.social_mail(mailer_options).deliver_now
     head :ok
 
   end

@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
   # s.add_dependency "something", "~> 1.0.0"
   s.add_dependency "recaptcha", "~> 0.3.6"
   s.add_dependency "trusty-cms",   "~> 2.0.0"
-  s.add_dependency "trusty-layouts-extension", "~> 2.0.0"
+  s.add_dependency "trusty-layouts-extension", "~> 2.0.2"
+  s.add_dependency 'roadie-rails', '~> 1.0.6'
 
   ignores = if File.exist?('.gitignore')
     File.read('.gitignore').split("\n").inject([]) {|a,p| a + Dir[p] }

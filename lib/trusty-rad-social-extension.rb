@@ -1,8 +1,8 @@
 module TrustyRadSocialExtension
-  VERSION     = "2.1.0"
+  VERSION     = "2.2.0"
   SUMMARY     = "Rad Social for Trusty CMS"
   DESCRIPTION = "Makes Trusty CMS better by adding rad_social!"
   URL         = "http://example.com/rad_social"
-  AUTHORS     = ["Eric Sipple"]
-  EMAIL       = ["sipple@trustarts.org"]
+  AUTHORS     = ["Eric Sipple, Brittany Martin, Danielle Greaves"]
+  EMAIL       = ["sipple@trustarts.org, martin@trustarts.org, greaves@trustarts.org"]
 end

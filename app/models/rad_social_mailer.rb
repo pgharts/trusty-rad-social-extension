@@ -9,10 +9,13 @@ class RadSocialMailer < ActionMailer::Base
     @from_name = from_address.display_name
     @from_email = from_address
     @message = options[:message]
+    @actual_from = ENV['RAD_SOCIAL_FROM_EMAIL']
+    @actual_from = from_address if @actual_from.nil?
 
     mail({
       to: options[:to],
-      from: @from_email,
+      from: @actual_from,
+      reply_to: @from_email,
       subject: options[:subject],
       text: @message,
       content_type: "text/html"

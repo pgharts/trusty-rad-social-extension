@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   # Define gem dependencies here.
   # Don't include a dependency on radiant itself: it causes problems when radiant is in vendor/radiant.
   # s.add_dependency "something", "~> 1.0.0"
-  s.add_dependency "recaptcha", "~> 0.3.6"
+  s.add_dependency "recaptcha", "~> 3.0"
   s.add_dependency "trusty-cms",   "~> 2.0.0"
   s.add_dependency "trusty-layouts-extension", "~> 2.0.2"
   s.add_dependency 'roadie-rails', '~> 1.0.6'

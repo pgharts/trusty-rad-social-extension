@@ -1,6 +1,5 @@
 class SocialMailerController < ApplicationController
   trusty_layout "default", {:only => :create_social_mail}
-  before_filter RadCaptchaFilter, :only => :create_social_mail
   no_login_required
 
   def create_social_mail
@@ -13,8 +12,12 @@ class SocialMailerController < ApplicationController
       :subject => params[:subject]
     }
 
-    RadSocialMailer.social_mail(mailer_options).deliver_now
-    head :ok
+    if verify_recaptcha
+      RadSocialMailer.social_mail(mailer_options).deliver_now
+      head :ok
+    else
+      head :bad_request, :ErrorMsg => "Please verify that you are not a robot. Tick the reCAPTCHA checkbox."
+    end
 
   end
 

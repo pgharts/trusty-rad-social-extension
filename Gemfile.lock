@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trusty-rad-social-extension (2.2.3)
+    trusty-rad-social-extension (2.2.4)
       recaptcha (~> 3.0)
       roadie-rails (~> 1.0.6)
       trusty-cms (~> 2.0.0)

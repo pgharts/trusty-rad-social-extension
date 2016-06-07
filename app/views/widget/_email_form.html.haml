@@ -22,6 +22,4 @@
   .loader
 
   #recaptcha-container.captcha-container
-    = recaptcha_tags :public_key => Rails.configuration.captcha_public_key, :display => {:theme => 'clean'}
-    #recaptcha_image
-    #recaptcha_response_field{:name => 'recaptcha_response_field'}
+    = recaptcha_tags

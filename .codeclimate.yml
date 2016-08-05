@@ -1,0 +1,4 @@
+languages:
+  Ruby: true
+exclude_paths:
+- "app/assets/javascripts/lib/rad_social/jquery.validate.min.js"

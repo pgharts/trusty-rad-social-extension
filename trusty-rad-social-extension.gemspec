@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   # Don't include a dependency on radiant itself: it causes problems when radiant is in vendor/radiant.
   # s.add_dependency "something", "~> 1.0.0"
   s.add_dependency "recaptcha", "~> 3.0"
-  s.add_dependency "trusty-cms",   "~> 2.0.0"
-  s.add_dependency "trusty-layouts-extension", "~> 2.0.2"
-  s.add_dependency 'roadie-rails', '~> 1.0.6'
+  s.add_dependency "trusty-cms",   "~> 3.0.0"
+  s.add_dependency "trusty-layouts-extension", "~> 3.0.0"
+  s.add_dependency 'roadie-rails', '~> 1.1.1'
 
   ignores = if File.exist?('.gitignore')
     File.read('.gitignore').split("\n").inject([]) {|a,p| a + Dir[p] }

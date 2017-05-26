@@ -29,7 +29,7 @@
       Message
     %div.form-fields
       %textarea{:class => "input-textbox", :id => "rs-message", :name => "message", :rows => 5, :cols => 40}
-        = email_message
+        = CGI.unescapeHTML(email_message)
   %input{:type=>"hidden", :name=>"subject", :value=> email_subject}
   %input{:type=>"hidden", :id=>"rs-base-message", :value=> email_message}
   #recaptcha-container.captcha-container
